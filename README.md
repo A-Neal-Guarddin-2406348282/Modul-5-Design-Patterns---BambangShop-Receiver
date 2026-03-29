@@ -1,6 +1,5 @@
-# BambangShop Receiver App
-Tutorial and Example for Advanced Programming 2024 - Faculty of Computer Science, Universitas Indonesia
-
+# BambangShop Receiver App by Neal Guarddin (2406348282)
+Neal already followed all tutorials procedures and it all work well.
 ---
 
 ## About this Project
