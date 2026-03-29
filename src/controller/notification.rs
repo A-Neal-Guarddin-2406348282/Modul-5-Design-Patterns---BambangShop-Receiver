@@ -1,5 +1,3 @@
-use std::ops::Not;
-
 use rocket::serde::json::Json;
 
 use bambangshop_receiver::Result;

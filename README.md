@@ -98,3 +98,16 @@ This is the place for you to write reflections:
    Dengan cara ini, Rust tetap menjaga keamanan memori dan konkurensi tanpa melanggar aturan `static`.
 
 #### Reflection Subscriber-2
+
+1. **Apakah sudah mengeksplor hal di luar langkah tutorial, misalnya `src/lib.rs`?**  
+   Ya. Dari `src/lib.rs`, saya belajar bagaimana konfigurasi aplikasi dan client HTTP global dikelola melalui `APP_CONFIG` dan `REQWEST_CLIENT`.  
+   Saya juga jadi lebih paham cara membuat resource bersama yang aman dipakai oleh beberapa bagian aplikasi.
+
+2. **Bagaimana jika ada lebih dari satu instance Receiver? Bagaimana jika ada lebih dari satu instance Main app?**  
+   Untuk banyak instance Receiver, sistem masih cukup mudah diperluas karena setiap instance hanya perlu konfigurasi port dan URL sendiri.  
+   Namun, jika ada lebih dari satu instance Main app, sistem menjadi lebih kompleks karena perlu pengaturan koordinasi endpoint, konfigurasi publisher, dan alur pengiriman notifikasi.  
+   Secara konsep masih bisa, tetapi pengelolaannya tidak sesederhana menambah Receiver baru.
+
+3. **Apakah sudah membuat test sendiri atau memperkaya dokumentasi Postman collection?**  
+   Saya belum banyak membuat test otomatis sendiri, tetapi saya sudah lebih memahami alur endpoint lewat Postman dan struktur kode pada controller, service, dan repository.  
+   Dokumentasi dan pengujian manual dengan Postman cukup membantu untuk memastikan fitur subscribe, unsubscribe, receive, dan list berjalan sesuai harapan.
